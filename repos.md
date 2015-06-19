@@ -1,5 +1,6 @@
 ---
 title: Repositories
+layout: index
 ---
 = Other GENI Software =
 * [GENI Clearinghouse](https://github.com/GENI-NSF/geni-ch)
