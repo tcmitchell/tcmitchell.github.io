@@ -70,6 +70,6 @@ rpmlint -i hello.spec <Source RPM> <Binary RPM>
 ## rpmdev-wipetree 
 Erase all files within dirs created by `rpmdev-setuptree`:
 
-```console
+```shell
 $ rpmdev-wipetree
 ```
