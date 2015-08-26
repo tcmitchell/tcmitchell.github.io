@@ -5,7 +5,7 @@ layout: index
 # As root
 Install stuff:
 
-```shell
+```
 # get up to date
 yum update -y
 
@@ -22,7 +22,7 @@ reboot
 
 Create a non-root user if you don't already have one:
 
-```shell
+```
 /usr/sbin/useradd makerpm
 usermod -a -G mock makerpm
 passwd makerpm
@@ -30,12 +30,12 @@ passwd makerpm
 
 # As a regular (non-root) user
 Configure for building RPMs:
-```shell
+```
 rpmdev-setuptree
 ```
 
 Get the hello tarball and the my version of the spec file
-```shell
+```
 cd "${HOME}"/rpmbuild/SOURCES
 wget http://ftp.gnu.org/gnu/hello/hello-2.9.tar.gz
 
@@ -44,7 +44,7 @@ wget http://www.gpolab.bbn.com/experiment-support/images/tom/hello.spec
 ```
 
 Make the package:
-```shell
+```
 cd "${HOME}"/rpmbuild/SPECS
 rpmbuild -ba hello.spec > rpmbuild.log 2>&1
 
@@ -52,7 +52,7 @@ rpmbuild -ba hello.spec > rpmbuild.log 2>&1
 ```
 
 Check the package:
-```shell
+```
 cd "${HOME}"/rpmbuild/SPECS
 
 # rpmlint <Spec File> <Source RPM> <Binary RPM>
@@ -65,6 +65,6 @@ rpmlint -i hello.spec <Source RPM> <Binary RPM>
 # Other useful command
 ## rpmdev-wipetree 
 Erase all files within dirs created by `rpmdev-setuptree`:
-```shell
+```
 $ rpmdev-wipetree
 ```
