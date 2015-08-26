@@ -37,14 +37,6 @@ rpmdev-setuptree
 
 Get the hello tarball and the my version of the spec file
 
-{% highlight shell %}
-cd "${HOME}"/rpmbuild/SOURCES
-wget http://ftp.gnu.org/gnu/hello/hello-2.9.tar.gz
-
-cd "${HOME}"/rpmbuild/SPECS
-wget http://www.gpolab.bbn.com/experiment-support/images/tom/hello.spec
-{% endhighlight %}
-
 ```
 cd "${HOME}"/rpmbuild/SOURCES
 wget http://ftp.gnu.org/gnu/hello/hello-2.9.tar.gz
