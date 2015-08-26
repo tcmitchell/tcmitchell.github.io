@@ -1,3 +1,7 @@
+---
+title: RPM
+layout: index
+---
 # As root
 Install stuff:
 ```shell
