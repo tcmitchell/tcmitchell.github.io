@@ -4,6 +4,7 @@ layout: index
 ---
 # As root
 Install stuff:
+
 ```shell
 # get up to date
 yum update -y
@@ -20,6 +21,7 @@ reboot
 ```
 
 Create a non-root user if you don't already have one:
+
 ```shell
 /usr/sbin/useradd makerpm
 usermod -a -G mock makerpm
